@@ -4,7 +4,7 @@ import Base.BaseUtil;
 import cucumber.api.Scenario;
 import cucumber.api.java.After;
 import cucumber.api.java.Before;
-import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
 /**
  * Created by Karthik on 31/01/2019.
  */
@@ -26,13 +26,13 @@ public class Hook extends BaseUtil{
 
         System.out.println("Opening the browser : Firefox");
 
-        /*System.setProperty("webdriver.firefox.marionette", "D:\\Libs\\geckodriver.exe");
-        base.Driver = new FirefoxDriver();*/
+        System.setProperty("webdriver.firefox.marionette", "/Applications/Firefox.app/Contents/MacOS/firefox");
+        base.Driver = new FirefoxDriver();
 
 
         //Chrome driver
-        System.setProperty("webdriver.chrome.driver", "C:\Libs\chromedriver");
-        base.Driver = new ChromeDriver();
+        // System.setProperty("webdriver.chrome.driver", "C:\Libs\chromedriver");
+        // base.Driver = new ChromeDriver();
     }
 
 
