@@ -22,7 +22,7 @@ public class Hook extends BaseUtil{
     public void InitializeTest(Scenario scenario) {
 
         // scenario.getName()
-        scenarioDef = base.features.createNode("Name");
+       // scenarioDef = base.features.createNode("Name");
 
         System.out.println("Opening the browser : Firefox");
 
@@ -38,10 +38,10 @@ public class Hook extends BaseUtil{
 
     @After
     public void TearDownTest(Scenario scenario) {
-        if (scenario.isFailed()) {
+        //if (scenario.isFailed()) {
             //Take screenshot logic goes here
-            System.out.println(scenario.getName());
-        }
+           // System.out.println(scenario.getName());
+       // }
         System.out.println("Closing the browser : MOCK");
     }
 
